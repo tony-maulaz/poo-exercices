@@ -37,6 +37,28 @@ int main(){
 Quel est l'affichage du problème suivant :
 
 ```CPP
+class Value {
+   public:
+    int getValue() { return value; }
+
+    void setValue(int value) { this->value = value; }
+
+   private:
+    int value;
+};
+
+class Container {
+   public:
+    Value& getValRef() { return val; }
+
+    Value getVal() { return val; }
+
+   private:
+    Value val;
+};
+
+int main()
+{
     cout << endl << "Exercice 2 reference" << endl;
     Container c;
     c.getValRef().setValue(4);
@@ -76,6 +98,7 @@ Quel est l'affichage du problème suivant :
     cout << num << ") V3 : " << v3.getValue() << endl;
     cout << num << ") V4 : " << v4.getValue() << endl;
     cout << num << ") C : " << c.getVal().getValue() << endl << endl;
+}
 ```
 
 ## Ex 3
