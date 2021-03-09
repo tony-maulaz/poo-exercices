@@ -29,6 +29,49 @@ void ex1() {
 
 ## Ex 2
 
+Quel est l'affichage du programme suivant :
+```C++
+struct Parent{
+    Parent(){
+        cout << "Aff : A" << endl;
+    }
+    Parent(int a){
+        cout << "Aff : B" << endl;
+    }
+};
+
+struct Enfant : public Parent{
+    Enfant(){
+        cout << "Aff : C" << endl;
+    }
+    Enfant(int a){
+        cout << "Aff : D" << endl;
+    }
+    Enfant(int a, int b) : Parent(a){
+        cout << "Aff : E" << endl;
+    }
+    Enfant(double a) : Parent(a){
+        cout << "Aff : F" << endl;
+    }
+};
+
+void ex2(){
+    cout << "Exercice 2" << endl;
+    cout << "E1" << endl;
+    Enfant e1;
+    cout << "p1" << endl;
+    Parent p1(12);
+    cout << "E2" << endl;
+    Enfant e2(1,2);
+    cout << "E3" << endl;
+    Enfant e3(5.3);
+    cout << "E4" << endl;
+    Enfant e4(2);
+}
+```
+
+## Ex 3
+
 Implémenter les classes `Vehicule` et `Voiture` de l'image suivante :
 
 ![alt text](images/heritage.png "UML")
@@ -40,7 +83,7 @@ Dans les méthodes, il faut juste afficher un texte.
 Vous devez pouvoir exécuter le main suivant 
 
 ```CPP
-void ex2()
+void ex3()
 {
     cout << "Exercice 2" << endl << endl;
     Voiture v;
