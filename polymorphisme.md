@@ -93,6 +93,89 @@ void main()
 }
 ```
 
+
+## Ex 2
+![alt text](images/polymorphisme.png "UML")
+
+#### Marche à suivre
+- Implémenter le code qui correspond au diagramme ci-dessus.
+
+#### Printable
+print
+: méthode virtuelle pure ( =0).
+
+#### Shape
+Comme cette classe a une méthode virtuelle, il faut aussi ajouter un destructeur virtuel. 
+
+Destructeur
+: Afficher `Shape est détruit`
+
+calculArea
+: Méthode virtuelle `pure`
+
+On ne définit pas la méthode `print` dans cette classe
+
+#### Rectangle et Hexagon
+Les propriétés des formes sont initialisées lors de la construction des objets.
+
+Destructeur
+: Afficher `<forme> est détruit`
+
+area
+: calcul l'aire de la forme
+
+print
+: Retourne une chaîne de caractères avec le nom de la forme ainsi que l'aire, ex `Un rectangle avec une aire de : 12`
+
+#### Text
+Lors de la construction de la classe, on initialise la propriété `text`.
+
+La propriété `text` est `const`
+
+print
+: retourne une chaîne de caractère : `Le message : <text>`
+
+### Main
+A la fin de l'implémentation, le code suivant doit pouvoir être exécuté dans le `main`
+
+```cpp
+void affichage(Printable& p){
+    cout << "Le massage à afficher est : " << endl;
+    p.print();
+}
+
+Shape* shapes[4] = {nullptr};
+shapes[0] = new Rectangle(10,20);
+shapes[1] = new Hexagon(3);
+
+Text t("Bonjour");
+
+affichage(shapes[0]);
+affichage(t);
+
+delete shapes[0];
+delete shapes[1];
+delete t;
+```
+
+### Question
+1. Quel est le rôle de la classe `Printable`
+1. Est-ce qu'il est possible de créer une instance de type `Shape`
+1. Est-ce qu'il est possible de créer une instance de type `Printable`
+1. Est-ce que le `delete` d'un pointeur appel le destructeur de la classe.
+1. Lors du `delete` du pointeur `shapes[0]` quel destructeur est appelé
+
+## Ex 3
+Quel est le danger du code suivant :
+
+On reprend le code de l'exercice 2
+
+```cpp
+Rectangle* p1 = new Rectange(12,4);
+Shape* p2 = p1;
+delete p1;
+```
+
 # Solution
 
 ## Ex 1
