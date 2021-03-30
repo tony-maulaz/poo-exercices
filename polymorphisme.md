@@ -148,12 +148,12 @@ Shape* shapes[4] = {nullptr};
 shapes[0] = new Rectangle(10,20);
 shapes[1] = new Hexagon(3);
 
-shapes[0].calculArea();
-shapes[1].calculArea();
+shapes[0]->calculArea();
+shapes[1]->calculArea();
 
 Text t("Bonjour");
 
-affichage(shapes[0]);
+affichage(*shapes[0]);
 affichage(t);
 
 delete shapes[0];
