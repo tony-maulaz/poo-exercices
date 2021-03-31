@@ -158,7 +158,6 @@ affichage(t);
 
 delete shapes[0];
 delete shapes[1];
-delete t;
 ```
 
 ### Question
