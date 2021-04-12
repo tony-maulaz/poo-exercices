@@ -26,7 +26,7 @@ Chaque groupe désignera un membre de l'équipe pour présenter son analyse deva
 
 ## Solution 1 - Séparation des actions
 
-Dans cette solution, les actions ne sont pas héritées mais liée par `agrégation`.
+Dans cette solution, les actions ne sont pas héritées mais liées par `agrégation`.
 
 ![alt text](images/classe1.png "UML")
 
