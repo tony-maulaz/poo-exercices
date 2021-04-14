@@ -10,7 +10,7 @@ Pour chacune des trois solutions ci-dessous, faite une analyse pour savoir si c'
 
 La proposition peut-être un bon début mais qui doit être améliorée.
 
-Voici quelques exemple des questions qui pourrait vous aider.
+Voici quelques exemple de questions qui pourraient vous aider.
 
 - Est-ce que c'est une bonne solution pour le jeu ? 
 - Quel sont les avantages de cette solution
