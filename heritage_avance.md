@@ -177,39 +177,6 @@ void ex(){
 }
 ```
 
-## Ex 6
-
-Quel est l'affichage du programme ?
-
-```CPP
-struct A
-{
-    A() { cout << "Constr A" << endl; }
-    A(int a) { cout << "Constr A, val : " << a << endl; }
-    ~A() { cout << "Destr A" << endl; }
-};
-
-struct B: public virtual A
-{
-    B(): A(4) { cout << "Constr B" << endl; }
-    ~B() { cout << "Destr B" << endl; }
-};
-
-struct C: public virtual A
-{
-    C() { cout << "Constr C" << endl; }
-    ~C() { cout << "Destr C" << endl; }
-};
-
-struct D: public B, public C {
-    D() : A(5) {}
-};
-
-void ex(){
-    D d;
-}
-```
-
 ## Ex 7
 
 Quel est l'affichage du programme suivant
