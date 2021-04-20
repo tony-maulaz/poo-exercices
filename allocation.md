@@ -2,7 +2,7 @@
 
 ## Ex 1
 
-Dans le code ci-dessous, modifier le `main` pour ajouter
+Dans le code ci-dessous, modifier le `main` afin de
 - Faire une allocation d'un objet `Example` dans une variable `e1` et libérer ensuite la mémoire.
 - Faire une allocation d'un tableau de `5` entiers dans une variable `tab` et libérer ensuite la mémoire.
 - Faire une allocation pour un tableau de `5` pointeurs sur des objets `Example`.
