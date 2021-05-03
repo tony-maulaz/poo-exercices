@@ -12,7 +12,7 @@ Par contre, le récapitulatif horaire par enseignant (calculé à partir du plan
 
 Enfin, il existe pour chaque formation un enseignant responsable qui seul peut éditer le récapitulatif horaire pour l’ensemble de la formation.
 
-### **Question :***
+### **Question :**
 - Modélisez cette situation par un diagramme de cas d’utilisation.
 
 
@@ -20,9 +20,9 @@ Enfin, il existe pour chaque formation un enseignant responsable qui seul peut �
 
 Question : Pour chacun des énoncés suivants, dessinez un diagramme des classes :
 
-- Tout écrivain a écrit au moins une œuvre.
-- Un rectangle a deux sommets qui sont des points. On construit un rectangle à partir des coordonnées de deux points. Il est possible de calculer sa surface et son périmètre.
-- Les cinémas sont composés de plusieurs salles. Les films sont projetés dans des salles.
+1. Tout écrivain a écrit au moins une œuvre.
+1. Un rectangle a deux sommets qui sont des points. On construit un rectangle à partir des coordonnées de deux points. Il est possible de calculer sa surface et son périmètre.
+1. Les cinémas sont composés de plusieurs salles. Les films sont projetés dans des salles.
 
 
 ## Ex 3 - Elaboration d'un diagramme de classes complet
@@ -50,3 +50,23 @@ La somme de ces loyers permet de calculer le chiffre d'affaires de l'hôtel entr
 
 ### **Question :**
 - Modélisez un diagramme de classes pour modéliser le problème de l'hôtel.
+
+
+# Solutions
+
+### Ex 1
+![uml ex1](images/uml-ex1.png "UML")
+
+### Ex 2.1
+![uml ex2.1](images/uml-ex2_1.png "UML")
+
+### Ex 2.2
+![uml ex2.1](images/uml-ex2_2.png "UML")
+
+### Ex 2.3
+![uml ex2.1](images/uml-ex2_3.png "UML")
+
+Ce diagramme montre un classe-association "Projection". Il doit pouvoir y avoir plusieurs instances de la classe-association "Projection", liant un film à une salle.
+
+### Ex 3
+![uml ex3](images/uml-ex3.png "UML")
