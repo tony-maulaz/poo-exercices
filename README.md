@@ -1,11 +1,5 @@
-# poo-exercices
 
-## Reference
-Exercice sur les références
 
-## Object
-
-## Héritage
-
-## Exception
-Exercices sur les exceptions et le danger de l'allocation.
+# Exercices POO
+## Ex 1 - Namespace
+- [namespace.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex1-namespace.md)
