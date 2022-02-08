@@ -143,3 +143,28 @@ int main()
     t.plot();
 }
 ```
+
+# Ex 5
+Quel est l'affichage du programme suivant ?
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Test{
+    Test(){ cout << "Test is construct" << endl; }
+};
+
+int main()
+{
+    cout << "Test construction" << endl;
+    cout << "Case 1" << endl;
+    Test t[3];
+    
+    cout << "Case 2" << endl;
+    Test* pt[3];
+    
+    cout << "Case 3" << endl;
+    pt[0] = new Test();
+}
+```
