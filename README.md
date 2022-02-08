@@ -13,6 +13,11 @@
 ## Ex 30 - Surcharge
 - [surcharge.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex30-surcharge.md)
 
-## Ex 40 - Constructeur
-- [constructeur.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex40-constructeur.md)
+## Ex 40 - Objets
+- [objets.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex40-objects.md)
 
+## Ex 50 - Constructeur
+- [constructeur.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex50-constructeur.md)
+
+## Ex 60 - Heritage
+- [heritage.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex60-heritage.md)

@@ -7,14 +7,14 @@ Créer un programme avec comme fichiers
 - `square.cpp`
 - `square.h`
 
-Implémenter une classe `Square` qui aura comme attributs privés :
+Implémenter une classe `Square` avec comme attributs privés :
 - `double side_length`
 - `double area`
 
-Les méthodes :
-- get area
-- get side
-- set side (en affectant une valeur à side, il faut aussi calcul l'air du carré)
+Les méthodes sont :
+- getArea
+- getSide
+- setSide (en affectant une valeur à side, il faut aussi calcul l'air du carré)
 
 Voici le code `main.cpp`, *ce code n'est pas complet*.
 

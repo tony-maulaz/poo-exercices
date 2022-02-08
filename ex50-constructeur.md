@@ -143,32 +143,3 @@ int main()
     t.plot();
 }
 ```
-
-## Ex 5
-
-Quel est l'affichage du code suivant ?
-
-```CPP
-struct A
-{
-    A() { cout << "Constr A" << endl; }
-    ~A() { cout << "Destr A" << endl; }
-};
-
-struct B: public A
-{
-    B() { cout << "Constr B" << endl; }
-    ~B() { cout << "Destr B" << endl; }
-};
-
-int main()
-{
-    cout << "Part 1" << endl;
-    A a;
-    cout << "Part 2" << endl;
-    B b;
-    cout << "Part 3" << endl;
-    p* p = new B();
-    delete p;
-}
-```
