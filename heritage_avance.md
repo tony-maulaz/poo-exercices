@@ -1,28 +1,6 @@
 # Héritage avancé
 
-## Ex 1
 
-Quel est l'affichage du code suivant ?
-
-```CPP
-struct A
-{
-    A() { cout << "Constr A" << endl; }
-    ~A() { cout << "Destr A" << endl; }
-};
-
-struct B: public A
-{
-    B() { cout << "Constr B" << endl; }
-    ~B() { cout << "Destr B" << endl; }
-};
-
-void ex1()
-{
-    A* a = new B();
-    delete a;
-}
-```
 
 ## Ex 2
 

@@ -9,3 +9,10 @@
 
 ## Ex 20 - Stdout
 - [stdout.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex20-stdout.md)
+
+## Ex 30 - Surcharge
+- [surcharge.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex30-surcharge.md)
+
+## Ex 40 - Constructeur
+- [constructeur.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex40-constructeur.md)
+

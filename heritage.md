@@ -1,35 +1,64 @@
 ## Ex 1
 
-Est-ce que le programme ci-dessous est-correct ?
-Quel est l'affichage du programme ?
+Quelle est le comportement du programme ci-dessous ?
 
-```CPP
+```cpp
+#include <iostream>
+
+using namespace std;
+
 class C1 {
-   public:
-    void afficher();
-
-   protected:
+  public:
+    
+  protected:
     int val;
 };
 
-void C1::afficher() { cout << "Val : " << val << endl; }
-
 class C2 : public C1 {
-   public:
-    C2() { val = 4; }
+  public:
+    C2() { }
 };
 
-void ex1() {
+int main() {
     C2 c;
-    c.afficher();
-    c.val = 2;
-    c.afficher();
+    c.val = 3;
 }
 ```
 
+
+# Ex 2
+Quel est l'affichage du programme ci-dessous ?
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class C1 {
+  public:
+    
+  public:
+    int val;
+};
+
+class C2 : public C1 {
+  public:
+    C2() { 
+        val = 5;
+    }
+};
+
+int main() {
+    C2 c;
+    cout << "Res=" << c.val;
+}
+```
+
+
 ## Ex 2
 
-Quel est l'affichage du programme suivant :
+Quel est l'affichage du programme suivant ?
+
 ```C++
 struct Parent{
     Parent(){
@@ -55,7 +84,7 @@ struct Enfant : public Parent{
     }
 };
 
-void ex2(){
+int main(){
     cout << "Exercice 2" << endl;
     cout << "E1" << endl;
     Enfant e1;
@@ -78,12 +107,12 @@ Implémenter les classes `Vehicule` et `Voiture` de l'image suivante :
 
 Le nombre de roue est affecté pendant la construction des classes enfants.
 
-Dans les méthodes, il faut juste afficher un texte.
+Dans les méthodes, il faut afficher un texte.
 
 Vous devez pouvoir exécuter le main suivant 
 
 ```CPP
-void ex3()
+int main()
 {
     cout << "Exercice 2" << endl << endl;
     Voiture v;
