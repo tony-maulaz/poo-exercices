@@ -21,3 +21,6 @@
 
 ## Ex 60 - Heritage
 - [heritage.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex60-heritage.md)
+
+## Ex 70 - Polymorphisme
+- [polymorphism.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex70-polymorphism.md)
