@@ -10,6 +10,9 @@
 ## Ex 20 - Stdout
 - [stdout.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex20-stdout.md)
 
+## Ex 21 - Stdin
+- [stdin.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex21-stdin.md)
+
 ## Ex 30 - Surcharge
 - [surcharge.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex30-surcharge.md)
 
