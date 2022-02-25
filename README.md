@@ -14,7 +14,7 @@
 - [stdin.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex21-stdin.md)
 
 ## Ex 30 - Surcharge
-- [surcharge.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex30-surcharge.md)
+- [surcharge.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex30-surcharge-fct.md)
 
 ## Ex 40 - Objets
 - [objets.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex40-objects.md)
