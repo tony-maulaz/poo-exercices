@@ -1,6 +1,6 @@
 ## Ex 1
 
-Quelle est le comportement du programme ci-dessous ?
+Quel est le comportement du programme ci-dessous ?
 
 ```cpp
 #include <iostream>
@@ -102,7 +102,7 @@ int main()
 
 ## Ex 4
 
-Modifier les `???` pour que la méthode dans la classe enfant appel la méthode `print` de la classe parent.
+Modifier les `???` pour que la méthode dans la classe enfant appel la méthode `print` de la classe parente.
 
 ```CPP
 #include <stdio.h>
@@ -174,7 +174,7 @@ Implémenter les classes `Vehicule` et `Voiture` de l'image suivante :
 
 ![alt text](images/heritage.png "UML")
 
-Le nombre de roue est affecté pendant la construction des classes enfants.
+Le nombre de roues est affecté pendant la construction des classes enfants.
 
 Dans les méthodes, il faut afficher un texte.
 
