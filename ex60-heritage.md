@@ -26,35 +26,6 @@ int main() {
 ```
 
 
-# Ex 2
-Quel est l'affichage du programme ci-dessous ?
-
-```cpp
-#include <iostream>
-
-using namespace std;
-
-class C1 {
-  public:
-    
-  public:
-    int val;
-};
-
-class C2 : public C1 {
-  public:
-    C2() { 
-        val = 5;
-    }
-};
-
-int main() {
-    C2 c;
-    cout << "Res=" << c.val;
-}
-```
-
-
 ## Ex 2
 
 Quel est l'affichage du programme suivant ?
@@ -99,29 +70,8 @@ int main(){
 }
 ```
 
+
 ## Ex 3
-
-Implémenter les classes `Vehicule` et `Voiture` de l'image suivante :
-
-![alt text](images/heritage.png "UML")
-
-Le nombre de roue est affecté pendant la construction des classes enfants.
-
-Dans les méthodes, il faut afficher un texte.
-
-Vous devez pouvoir exécuter le main suivant 
-
-```CPP
-int main()
-{
-    cout << "Exercice 2" << endl << endl;
-    Voiture v;
-    v.avancer();
-    v.tourner();
-}
-```
-
-## Ex 4
 
 Quel est l'affichage du code suivant ?
 
@@ -147,5 +97,95 @@ int main()
     cout << "Part 3" << endl;
     p* p = new B();
     delete p;
+}
+```
+
+## Ex 4
+
+Modifier les `???` pour que la méthode dans la classe enfant appel la méthode `print` de la classe parent.
+
+```CPP
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+struct Parent{
+    void print(){ cout << "Parent" << endl; }
+};
+
+struct Enfant : public Parent{
+    void print(){ 
+        // ??? 
+        cout << "Enfant" << endl; 
+    }
+};
+
+int main()
+{
+    Enfant e;
+    e.print();
+    return 0;
+}
+```
+
+L'affichage du code sera
+```console
+Parent
+Enfant
+```
+
+## Ex 5
+
+```CPP
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+struct Parent{
+    
+    Parent(string m){
+        text = m;
+    }
+    
+    string text;
+};
+
+struct Enfant : public Parent{
+    
+    Enfant(){}
+};
+
+int main()
+{
+    Enfant e;
+    e.print();
+    return 0;
+}
+```
+
+1. Pourquoi le code ci-dessus ne compile pas ?
+1. Modifier le code pour le rendre exécutable.
+
+## Ex XXX
+
+Implémenter les classes `Vehicule` et `Voiture` de l'image suivante :
+
+![alt text](images/heritage.png "UML")
+
+Le nombre de roue est affecté pendant la construction des classes enfants.
+
+Dans les méthodes, il faut afficher un texte.
+
+Vous devez pouvoir exécuter le main suivant 
+
+```CPP
+int main()
+{
+    cout << "Exercice 2" << endl << endl;
+    Voiture v;
+    v.avancer();
+    v.tourner();
 }
 ```
