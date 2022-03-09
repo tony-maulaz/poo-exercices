@@ -25,6 +25,41 @@ void main(){
 
 ## Ex 2
 
+Dans le code ci-dessous, quelles instructions compilent ?
+
+```CPP
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+class ClassA{
+  public:
+    ClassA(int val){ this->val = val;}
+ 
+  private:    
+    int val;
+};
+
+class ClassB{
+  public:
+    ClassA a;
+};
+
+int main()
+{
+    printf("Constructeur de classe");
+
+    // 1) ClassA ca;
+    // 2) ClassA ca(12);
+    // 3) ClassB cb;
+
+    return 0;
+}
+```
+
+## Ex 3
+
 Quel est l'affichage du programme suivant :
 
 ```CPP
@@ -67,7 +102,7 @@ int main()
 }
 ```
 
-## Ex 3
+## Ex 4
 Ajouter un constructeur et un destructeur dans la classe ci-dessous.
 
 Le constructeur permet d'initialiser les cordonnées lors de la création.
@@ -103,7 +138,7 @@ int main()
 ```
 
 
-# Ex 4
+# Ex 5
 
 Ajouter des constructeurs afin que le code dans le `main` fonctionne, il doit initialiser les deux valeurs
 de mesures qui seront affichées par le programme.
@@ -144,7 +179,7 @@ int main()
 }
 ```
 
-# Ex 5
+# Ex 6
 Quel est l'affichage du programme suivant ?
 
 ```cpp
