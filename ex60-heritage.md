@@ -1,6 +1,7 @@
-## Ex 1
+## Ex 1 - Accessibilité
 
-Quel est le comportement du programme ci-dessous ?
+Mettez toutes les lignes qui ont une erreur d'accessibilité en commentaire pour
+que le code compile.
 
 ```cpp
 #include <iostream>
@@ -9,28 +10,115 @@ using namespace std;
 
 class C1 {
   public:
+    int pub_c1;
+    
+    void meth_pub_c1(){
+        priv_c1 = 9;
+    }
     
   protected:
-    int val;
+    int prot_c1;
+    
+    void meth_prot_c1(){
+        priv_c1 = 4;
+    }
+    
+  private:
+    int priv_c1;
+    
+    void meth_priv_c1(){
+        priv_c1 = 12;
+    }
 };
 
 class C2 : public C1 {
   public:
-    C2() { }
+    
+    void meth_pub_c2(){
+        meth_priv_c1();
+        prot_c1 = 8;
+        priv_c2 = 1;
+    }
+    
+    int pub_c2;
+    
+  protected:
+    int prot_c2;
+    
+    void meth_prot_c2(){
+        priv_c2 = 2;
+        meth_prot_c1();
+    }
+    
+  private:
+    int priv_c2;
 };
 
 int main() {
-    C2 c;
-    c.val = 3;
+    C1 c1;
+    C2 c2;
+    
+    c1.pub_c1 = 2;
+    c2.prot_c2 = 1;
+}
+```
+
+## Ex 2
+
+Quel est l'affichage du code suivant ?
+
+```CPP
+struct A
+{
+    A() { cout << "Constr A" << endl; }
+    ~A() { cout << "Destr A" << endl; }
+};
+
+struct B: public A
+{
+    B() { cout << "Constr B" << endl; }
+    ~B() { cout << "Destr B" << endl; }
+};
+
+int main()
+{
+    cout << "Part 1" << endl;
+    A a;
+    cout << "Part 2" << endl;
+    B b;
+}
+```
+
+## Ex 3
+
+Modifier le constructeur `Enfant` pour rendre le code compilable.
+
+```CPP
+#include <iostream>
+
+using namespace std;
+
+class Parent {
+  public:
+    Parent(int val){}
+};
+
+class Enfant : public Parent {
+  public:
+    Enfant() {}
+};
+
+int main() {
+    Enfant e;
 }
 ```
 
 
-## Ex 2
+## Ex 4
 
 Quel est l'affichage du programme suivant ?
 
-```C++
+```CPP
 struct Parent{
     Parent(){
         cout << "Aff : A" << endl;
@@ -59,48 +147,22 @@ int main(){
     cout << "Exercice 2" << endl;
     cout << "E1" << endl;
     Enfant e1;
+
     cout << "p1" << endl;
     Parent p1(12);
+    
     cout << "E2" << endl;
     Enfant e2(1,2);
+    
     cout << "E3" << endl;
     Enfant e3(5.3);
+    
     cout << "E4" << endl;
     Enfant e4(2);
 }
 ```
 
-
-## Ex 3
-
-Quel est l'affichage du code suivant ?
-
-```CPP
-struct A
-{
-    A() { cout << "Constr A" << endl; }
-    ~A() { cout << "Destr A" << endl; }
-};
-
-struct B: public A
-{
-    B() { cout << "Constr B" << endl; }
-    ~B() { cout << "Destr B" << endl; }
-};
-
-int main()
-{
-    cout << "Part 1" << endl;
-    A a;
-    cout << "Part 2" << endl;
-    B b;
-    cout << "Part 3" << endl;
-    p* p = new B();
-    delete p;
-}
-```
-
-## Ex 4
+## Ex 5
 
 Modifier les `???` pour que la méthode dans la classe enfant appel la méthode `print` de la classe parente.
 
@@ -135,7 +197,7 @@ Parent
 Enfant
 ```
 
-## Ex 5
+## Ex XX
 
 ```CPP
 #include <stdio.h>
