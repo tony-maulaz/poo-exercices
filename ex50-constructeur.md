@@ -1,27 +1,240 @@
-## Ex 1
+## Ex 1.1
 
 Quel est l'affichage du programme suivant :
 
 ```cpp
 class C1 {
    public:
-    C1() { cout << "C1 est construit" << endl; }
-    ~C1() { cout << "C1 est détruit" << endl; }
+    C1() { cout << "1"; }
+    ~C1() { cout << "2"; }
 };
 
 class C2 {
    public:
-    C2() { cout << "C2 est construit" << endl; }
-    C2(int a) { cout << "C2 avec param : " << a << endl; }
-    ~C2() { cout << "C2 est détruit" << endl; }
-
-    C1 c1[3];
+    C2() { cout << "3"; }
+    ~C2() { cout << "4"; }
 };
 
-void main(){
-    C2 c(3);
+int main(){
+    C2 c;
 }
 ```
+
+## Ex 1.2
+
+Quel est l'affichage du programme suivant :
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { cout << "3"; }
+    ~C2() { cout << "4"; }
+
+    C1 varC1; // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.3
+
+Quel est l'affichage du programme suivant :
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { cout << "3"; }
+    ~C2() { cout << "4"; }
+};
+
+int main(){
+    C1 c1;
+    C2 c2;
+}
+```
+
+## Ex 1.4
+
+Quel est l'affichage du programme suivant :
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { 
+        cout << "3";
+        C1 c1; 
+        cout << "5";
+    }
+    ~C2() { cout << "4"; }
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.5
+
+Quel est l'affichage du programme suivant :
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    C1(int val) { cout << "5"; }
+
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { 
+        cout << "3";
+        c1 = C1(1); 
+    }
+    ~C2() { cout << "4"; }
+
+    C1 c1; // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.6
+
+- Quel est l'affichage du programme suivant ?
+- Quelle est la différence avec l'exercice précédant ?
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    C1(int val) { cout << "5"; }
+
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() : c(1) { 
+        cout << "3";
+    }
+    ~C2() { cout << "4"; }
+
+    C1 c; // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.7
+
+- Quel est l'affichage du programme suivant ?
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    C1(int val) { cout << "5"; }
+
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { 
+        cout << "3";
+    }
+    ~C2() { cout << "4"; }
+
+    C1* pc; // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.8
+
+- Quel est l'affichage du programme suivant ?
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    C1(int val) { cout << "5"; }
+
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { 
+        cout << "3";
+    }
+    ~C2() { cout << "4"; }
+
+    C1 pc = C1(4); // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
+## Ex 1.9
+
+- Quel est l'affichage du programme suivant ?
+
+```cpp
+class C1 {
+   public:
+    C1() { cout << "1"; }
+    C1(int val) { cout << "5"; }
+
+    ~C1() { cout << "2"; }
+};
+
+class C2 {
+   public:
+    C2() { 
+        cout << "3";
+    }
+    ~C2() { cout << "4"; }
+
+    C1 pc[3]; // attribut
+};
+
+int main(){
+    C2 c;
+}
+```
+
 
 ## Ex 2
 
@@ -58,7 +271,52 @@ int main()
 }
 ```
 
-## Ex 3
+# Ex 3
+
+Ajouter des constructeurs afin que le code dans le `main` fonctionne, il doit initialiser les deux valeurs
+de mesures qui seront affichées par le programme.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class Measure{
+    public:
+        
+        string toString(){
+            return "val=" + to_string(value);
+        }
+        
+    private:
+        double value;
+};
+
+class Test{
+    public:
+    
+        void plot(){
+            cout << "m1 : " << m1.toString() << endl;
+            cout << "m2 : " << m2.toString() << endl;
+        }
+    
+    private:
+        Measure m1;
+        Measure m2;
+};
+
+int main()
+{
+    // les valeurs des mesures passées en paramètres
+    Test t(2.34, 12,8);
+    t.plot();
+}
+```
+
+
+
+
+## Ex XXX
 
 Quel est l'affichage du programme suivant :
 
@@ -102,7 +360,7 @@ int main()
 }
 ```
 
-## Ex 4
+## Ex XXX
 Ajouter un constructeur et un destructeur dans la classe ci-dessous.
 
 Le constructeur permet d'initialiser les cordonnées lors de la création.
@@ -138,48 +396,9 @@ int main()
 ```
 
 
-# Ex 5
 
-Ajouter des constructeurs afin que le code dans le `main` fonctionne, il doit initialiser les deux valeurs
-de mesures qui seront affichées par le programme.
 
-```cpp
-#include <iostream>
-
-using namespace std;
-
-class Measure{
-    public:
-        
-        string toString(){
-            return "val=" + to_string(value);
-        }
-        
-    private:
-        double value;
-};
-
-class Test{
-    public:
-    
-        void plot(){
-            cout << "m1 : " << m1.toString() << endl;
-            cout << "m2 : " << m2.toString() << endl;
-        }
-    
-    private:
-        Measure m1;
-        Measure m2;
-};
-
-int main()
-{
-    Test t(2.34, 12,8);
-    t.plot();
-}
-```
-
-# Ex 6
+# Ex XXX
 Quel est l'affichage du programme suivant ?
 
 ```cpp
