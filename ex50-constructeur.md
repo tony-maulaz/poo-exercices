@@ -313,6 +313,27 @@ int main()
 }
 ```
 
+## Ex 4
+
+Créer une classe `Voiture` qui possède un attribut `Marque` de type `String`
+
+La `marque` est passée lors de la construction de l'objet et ne doit pas pouvoir être modifiée.
+
+Il doit être possible de lire la marque.
+
+Il ne doit pas être possible de créer une voiture sans marque.
+
+
+## Ex 5
+
+Créer une classe `Velo` qui possède un attribut `nbr_roue` de type `int`
+
+Créer une classe `Garage` qui possède un attribut `Velo` de type `Velo`
+
+Le nombre de roue du vélo sera passé en paramètre lors de la création du garage. 
+
+Le constructeur pas défaut du vélo ne doit pas exister, car il doit être obligatoire
+de donner le nombre de roue lors de la création d'un vélo.
 
 
 
