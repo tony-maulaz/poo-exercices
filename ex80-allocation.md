@@ -101,7 +101,7 @@ int main(){
 Corriger l'exercice #4 pour que tous les objets soient détruits à la fin.
 
 
-## Ex 6
+# Ex 6
 Il faut créer une classe qui permet de gérer une liste de `double` de taille dynamique.
 
 Créer une classe `Data` :
