@@ -27,3 +27,6 @@
 
 ## Ex 70 - Polymorphisme
 - [polymorphism.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex70-polymorphism.md)
+
+## Ex 80 - Allocation
+- [allocation.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex80-allocation.md)
