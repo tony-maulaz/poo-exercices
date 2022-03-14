@@ -139,3 +139,26 @@ void main(){
     d.liberer();
 }
 ```
+
+# Ex 7
+
+Quel est l'affichage du programme suivant :
+
+```CPP
+struct Parent
+{
+    Parent() { cout << "Constr parent" << endl; }
+    virtual ~Parent() { cout << "Destr parent" << endl; }
+};
+
+struct Enfant: public Parent
+{
+    Enfant() { cout << "Constr enfant" << endl; }
+    ~Enfant() { cout << "Destr enfant" << endl; }
+};
+
+void ex2(){
+    Parent* p = new Enfant();
+    delete p;
+}
+```
