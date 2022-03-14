@@ -197,6 +197,23 @@ Parent
 Enfant
 ```
 
+## Ex 6 - Classe 
+Écrire deux classes `Shape` et `Square`.
+- la classe `Shape` a un attribut entier `nbr_side` qui doit être initialisé lors de la construction.
+- l'attribut `nbr_side` doit être en lecture seule.
+- la classe `Square` hérite de `Shape`.
+- la classe `Shape` n'a pas de constructeur par défaut.
+- lors de la création de la classe `Square`, le nombre de côtés est initialisé à `4`.
+
+Modifier le `main` ci-dessous afin d'afficher le nombre de côtés de la forme.
+
+```CPP
+int main(){
+    Square s;
+    cout << "Number of sides : " << "???" << endl;
+}
+```
+
 ## Ex XX
 
 ```CPP
