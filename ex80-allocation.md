@@ -140,7 +140,7 @@ void main(){
 }
 ```
 
-# Ex 7
+# Ex 7.1
 
 Quel est l'affichage du programme suivant :
 
@@ -149,6 +149,31 @@ struct Parent
 {
     Parent() { cout << "Constr parent" << endl; }
     virtual ~Parent() { cout << "Destr parent" << endl; }
+};
+
+struct Enfant: public Parent
+{
+    Enfant() { cout << "Constr enfant" << endl; }
+    ~Enfant() { cout << "Destr enfant" << endl; }
+};
+
+void ex2(){
+    Parent* p = new Enfant();
+    delete p;
+}
+```
+
+# Ex 7.2
+
+Quel est l'affichage du programme suivant :
+
+> Sans le `virtual` dans la classe `Parent` 
+
+```CPP
+struct Parent
+{
+    Parent() { cout << "Constr parent" << endl; }
+    ~Parent() { cout << "Destr parent" << endl; }
 };
 
 struct Enfant: public Parent
