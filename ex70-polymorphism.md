@@ -56,7 +56,7 @@ Quelle est la différence entre une méthode virtuelle et une méthode virtuelle
 # Ex 4
 
 - Quel est le problème du code suivant ?
-- Comment le rendre exécutable ?
+- Modifier le `main` afin de rendre le code exécutable ?
 
 ```CPP	
 #include <iostream>
