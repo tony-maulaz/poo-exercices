@@ -82,6 +82,7 @@ int main()
 
 # Ex 5
 
-Reprendre l'exercice `Person` et modifier la classe `School` pour avoir un tableau de `Person`.  
+Reprendre l'exercice `Person` et modifier la classe `School` pour avoir un tableau de `Person*`.  
+Ajouter une méthode `printInfos` dans la classe `Person`.  
 La méthode `printList` de la classe `School` doit afficher la liste des personnes, et appeler la méthode `printInfos` de chaque personne.  
 Il est impossible de créer une personne.  
