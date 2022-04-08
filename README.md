@@ -33,3 +33,6 @@
 
 ## Ex 80 - Allocation
 - [allocation.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex80-allocation.md)
+
+## Ex 90 - Exception
+- [exception.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex90-exception.md)
