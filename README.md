@@ -36,3 +36,6 @@
 
 ## Ex 90 - Exception
 - [exception.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex90-exception.md)
+
+## Ex 100 - Cast
+- [cast.md](https://github.com/tony-maulaz/poo-exercices/blob/main/ex100-cast.md)
