@@ -8,7 +8,7 @@ Il est important de modéliser uniquement les parties importantes. Il se peut qu
 
 ## Description
 
-Vous êtes mandaté par une entreprise pour modéliser le fonctionnement d'une salle de cinéma. Il faut donc représenté de manière graphique les différentes actions à réaliser et qui peut les effectuer.
+Vous êtes mandaté par une entreprise pour modéliser le fonctionnement d'une salle de cinéma. Il faut représenter de manière graphique les différentes actions et qui peut les effectuer.
 
 Tous les employés du cinéma peuvent contrôler les billets à l'entrée de la salle. Si le film a une limite d'âge, l'employé chargé du contrôle va aussi s'assurer que le détenteur du billet a l'âge adéquat pour visionner le film.
 
