@@ -308,7 +308,7 @@ class Test{
 int main()
 {
     // les valeurs des mesures passées en paramètres
-    Test t(2.34, 12,8);
+    Test t(2.34, 12.8);
     t.plot();
 }
 ```
