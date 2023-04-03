@@ -1,4 +1,172 @@
 # Exception
+## Ex 0
+Quel est l'affichage des programmes suivant ?
+
+### 0.1
+
+```CPP
+#include <iostream>
+
+using namespace std;
+
+double calc(int a, int b)
+{   
+    try{
+
+        if( b == 0)
+            throw 1;
+        else
+            return a/b;
+
+    }
+    catch(int& val){
+        cout << val << endl;
+        return 0;
+    }
+}
+
+int main(){
+
+    int a = 5;
+    int b = 0;
+
+    calc(a,b);    
+}
+```
+
+### 0.2
+```CPP
+void porcess(){
+    try{
+        cout << "1";
+        throw 9;
+        cout << "2";
+    }
+    catch(...){
+        cout << "3";
+        throw 'b';
+        cout << "5";
+    }
+
+    cout << "7";
+}
+
+int main(){
+
+    try{
+        porcess();
+    }
+    catch(char c){
+        cout << "6" << c;
+    }
+    catch(...){
+        cout << "0";
+    }
+    
+    cout << "4";
+}
+```
+
+### 0.3
+```CPP
+void calc(int val){
+
+    if( val == 1 )
+        throw 1;
+
+    else if( val == 2 )
+        throw 2;
+
+    else if( val == 3 )
+        throw 'a';
+
+    else if( val == 4 )
+        throw "BOOM";
+
+    else
+        cout  << "5";
+
+}
+
+void porcess(int val){
+    try{
+        calc(val);
+        cout << "9";
+    }
+    catch(double e){
+        cout << "8";
+    }
+    catch(int e){
+        cout << e;
+    }
+
+    cout << "7";
+}
+
+int main(){
+
+    try{
+        cout << 'a' << endl;
+        porcess(0);
+        cout << endl << 'b' << endl;
+        porcess(1);
+        cout << endl << 'c' << endl;
+        porcess(2);
+        cout << endl << 'd' << endl;
+        porcess(3);
+        cout << endl << 'e' << endl;
+        porcess(4);
+        cout << endl << 'f' << endl;
+        porcess(5);
+    }
+    catch(...){
+        cout << "0";
+    }
+}
+```
+
+### 0.4
+```CPP
+void calc(){
+
+    try{
+        throw 1;
+    }
+    catch(int v){
+        cout << "1";
+        throw 2;
+        cout << "4";
+    }
+}
+
+void porcess(int val){
+    try{
+        calc();
+        cout << "9";
+    }
+    catch(double e){
+        cout << "8";
+    }
+    catch(int e){
+        cout << e;
+    }
+
+    cout << "7";
+}
+
+int main(){
+
+    try{
+        cout << 'a' << endl;
+        porcess(0);
+        cout << endl << 'b' << endl;
+        calc();
+    }
+    catch(...){
+        cout << "0";
+    }
+}
+```
 
 ## Ex 1
 Faire un programme qui lève une exception de type `int`.
