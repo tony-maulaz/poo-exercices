@@ -176,7 +176,7 @@ Ce programme doit ensuite faire un `catch` de cette exception et afficher un mes
 Exemple avec le nombre `12`
 
 ```console
-Il y a eu une excéption avec le nombre 12
+Il y a eu une exception avec le nombre 12
 ```
 
 
